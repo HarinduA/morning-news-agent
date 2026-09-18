@@ -20,7 +20,7 @@ jobs:
 
       - name: Install packages
         run: |
-          pip install feedparser google-generativeai
+          pip install feedparser google-genai
 
       - name: Run news agent
         env:
