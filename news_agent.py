@@ -2,8 +2,8 @@ import feedparser
 import google.generativeai as genai
 
 # Gemini API key
-genai.configure(api_key="YOUR_GEMINI_API_KEY")
-
+import os
+genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 # Google News RSS
 url = "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en"
 news = feedparser.parse(url)
